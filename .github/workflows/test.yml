@@ -16,7 +16,7 @@ jobs:
     name: Test cargo-bump
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Run cargo-bump
