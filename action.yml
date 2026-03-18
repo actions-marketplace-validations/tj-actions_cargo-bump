@@ -38,7 +38,7 @@ runs:
         profile: minimal
         toolchain: stable
         override: true
-    - uses: actions/cache@v4
+    - uses: actions/cache@v5
       id: cache-cargo-bump
       if: steps.semver-diff.outputs.release_type != '' || inputs.release_type != ''
       with:
